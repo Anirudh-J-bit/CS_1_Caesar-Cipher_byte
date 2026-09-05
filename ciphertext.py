@@ -1,7 +1,6 @@
-s=input()
-listofinputs=s.split()
-plaintext=listofinputs[0]
-shiftvalue=int(listofinputs[1])
+plaintext=input()
+shiftvalue=int(input())
+shiftvalue = shiftvalue % 26
 #Encryption
 ciphertext=""
 for i in plaintext:
@@ -12,7 +11,10 @@ for i in plaintext:
             ciphertext=ciphertext+i
             continue
         else:
-            cipherordinal=ordinal+shiftvalue
+            if shiftvalue<0:
+                cipherordinal=ordinal+(90+shiftvalue)
+            else:
+                cipherordinal=ordinal+shiftvalue
             if cipherordinal>90:
                 cipherordinal-=26
             cipherchar=chr(cipherordinal)
@@ -24,7 +26,10 @@ for i in plaintext:
             ciphertext = ciphertext + i
             continue
         else:
-            cipherordinal = ordinal + shiftvalue
+            if shiftvalue < 0:
+                cipherordinal = ordinal + (122 + shiftvalue)
+            else:
+                cipherordinal = ordinal + shiftvalue
             if cipherordinal > 122:
                 cipherordinal -= 26
             cipherchar = chr(cipherordinal)
