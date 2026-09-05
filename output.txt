@@ -1,0 +1,7 @@
+Outputs :
+1)Encrypted:  Tewwasvh0123!
+  Decrypted:  Password0123!
+2)Encrypted:  FwNyMrFyWnC
+  Decrypted:  ArItHmAtRiX
+3)Encrypted:  FbehuVhfxulwb
+  Decrypted:  CyberSecurity
