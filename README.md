@@ -1,2 +1,18 @@
-# caesar-cipher
-Caesar Cipher text encryption and decryption system that securely transforms plaintext into ciphertext using a user-defined shift/key value and can reverse the process to retrieve the original message.
+# Caesar-Cipher
+Overview :  
+This project implements a Caesar Cipher for encrypting and decrypting text using a configurable shift value (key).
+
+The Caesar Cipher is a simple substitution cipher in which each alphabetic character in the plaintext is shifted by a fixed number of positions in the alphabet. During decryption, the same shift value is used in the reverse direction to recover the original text.
+
+Non-alphabetic characters such as spaces, numbers, and special characters are preserved unchanged.
+
+Input/Output examples : <br><br>
+Description : The plain text and shift values should be given with a space seperation as input. The encrypted as well
+as the decrypted message is returned. <br><br>
+I)Input : <br> Password0123! 4 <br>
+  Output : <br> Encrypted:  Tewwasvh0123!
+Decrypted:  Password0123!
+
+II)Input : <br> ArItHmAtRiX 5 <br>
+Output : <br> Encrypted:  FwNyMrFyWnC
+Decrypted:  ArItHmAtRiX
